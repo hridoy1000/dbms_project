@@ -1,0 +1,45 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.b_bg {
+  background-image: url("images/b4.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.title_color{
+  height: 50px; 
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 0.2px 0.2px;
+  font-style: italic;
+  font-weight: 1000px;
+  padding-top: 50px;
+  margin-top: 10px;
+}
+.s_body {
+  display: flex;
+  flex-direction: column;
+  width: 1250px;
+  background-color: rgb(231, 230, 230);
+  padding-left: 50px;
+  padding-top: 5px;
+  margin-top: 200px;
+  margin-left: 95px;
+  
+}
+.form-all {
+  width:fit-content;
+  margin-top: 200px !important;
+  margin-bottom: 0px !important;
+  margin-left: 400px !important;
+  padding-top: 2px !important;
+  padding-bottom: 0px !important;
+  border-radius: 5px;
+}
+

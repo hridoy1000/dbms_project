@@ -48,9 +48,20 @@
     </div>
   </nav>
 <!-- main body-->
+
+<!-- post an opportunity title -->
+<div class="post-title title_bg">
+    <h1 class="text-center text-dark t-color">Post an Opportunity</h1>
+</div>
+
+
+
+<div class="d-inline-flex">
+
+<div class="p-5 w-75">
   <!-- Post Guidline -->
     <div class="container-fluid display-flex">
-        <h4>Have any opportunity that you would like to share with Youth Opportunities community? Please use this form to inform us about it. You can also mail us at <a post@youthop.com>post@youthop.com</a>
+        <h4>Have any opportunity that you would like to share with Youth Opportunities community? Please use this form to inform us about it.
 
             By submitting opportunity to us, you are agreeing to these terms. Please read them carefully.
         </h4>
@@ -63,43 +74,88 @@
     </p> 
     </div>
 
-    <div class="container-fluid form">
-        <form action="post.php" method="post">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" class="form-control" id="title" name="title" placeholder="Enter title">
+
+<!-- middle container -->
+    <div class="">
+      <div class="container-fluid form p-2">
+        <form class="form-horizontal m-4 p-3"  action ="post.php" method="post">
+            <div class="form-group p-1">
+                <label for="title">Title <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Enter title" required>
             </div>
-            <div class="form-group">
+            <div class="form-group p-1">
                 <label for="description">Description</label>
                 <textarea class="form-control" id="description" name="description" rows="3"></textarea>
             </div>
-            <div class="form-group">
-                <label for="image">Image</label>
+            <div class="form-group p-1">
+              <label for="process">Application Process<sup class="text-danger">*</sup></label>
+              <textarea class="form-control" id="process" name="process" rows="3" required></textarea>
+          </div>
+          <div class="form-group p-1">
+            <label for="Eligibilitis">Eligibilitis<sup class="text-danger">*</sup> </label>
+            <textarea class="form-control" id="Eligibilitis" name="Eligibilitis" rows="3" required></textarea>
+        </div>
+            <div class="form-group p-1">
+              <label for="benefits">Benefits<sup class="text-danger">*</sup> </label>
+              <textarea class="form-control" id="benefits" name="benefits" rows="3" required></textarea>
+          </div>
+          <div class="form-group p-1">
+              <label for="type">Type<sup class="text-danger">*</sup></label>
+              <select class="form-control" id="type" name="type" placeholder="Enter Types"required>
+                  <option>Competition</option>                    
+                  <option>Scholarship</option>
+                  <option>Fellowship</option>
+                  <option>Internship</option>
+                  <option>Workshop</option>
+                  <option>Job</option>
+                  <option>Miscellaneos</option>
+              </select>
+          </div>
+          <div class="form-group p-1">
+            <label for="funding">Funding Type</label>
+            <select class="form-control" id="funding" name="funding">
+                <option>General</option>
+                <option>Fully-FUndded</option>
+                <option>Partially-Funded</option>
+            </select>
+        </div>
+        <!-- Adding a radio button -->
+        <div class="form-group p-1">
+            <label for="type">Did it have Deadline ?<sup class="text-danger">*</sup></label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="deadline" id="flexRadioDefault1" value="1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="deadline" id="flexRadioDefault2" value="0" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
+              </div>
+        </div>
+          <!-- start dates -->
+          <div class="form-group p-1">
+            <label for="start_date">Start Date</label>
+            <input type="date" class="form-control" id="start_date" name="start_date" placeholder="Enter Start Date">
+            </div>
+            <div class="form-group p-1">
+                <label for="end_date">End Date</label>
+                <input type="date" class="form-control" id="end_date" name="end_date" placeholder="Enter End Date">
+                </div>
+            <div class="form-group p-1">
+                <label for="image">Featured Image<sup class="text-danger">*</sup></label>
                 <input type="file" class="form-control-file" id="image" name="image">
             </div>
-            <div class="form-group">
-                <label for="deadline">Deadline</label>
-                <input type="date" class="form-control" id="deadline" name="deadline">
-            </div>
-            <div class="form-group">
-                <label for="link">Link</label>
+         
+            <div class="form-group p-1">
+                <label for="link">Applied Link</label>
                 <input type="text" class="form-control" id="link" name="link" placeholder="Enter link">
             </div>
-            <div class="form-group">
-                <label for="type">Type</label>
-                <select class="form-control" id="type" name="type" placeholder="Enter Types">
-                    <option >Competition</option>                    
-                    <option>Scholarship</option>
-                    <option>Fellowship</option>
-                    <option>Internship</option>
-                    <option>Workshop</option>
-                    <option>Job</option>
-                    <option>Inside-UIU</option>
-                    <option>Miscellaneos</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="lacation">Location</label>
+          
+            <div class="form-group p-1">
+                <label for="lacation">Location<sup class="text-danger">*</sup></label>
                 <select class="form-control" id="location" name="location">
                     <option>Dhaka</option>
                     <option>Mymensingh</option>
@@ -109,14 +165,60 @@
                     <option>Rangpur</option>
                     <option>Chattogram</option>
                 </select>
+              </div>
+              <div class="form-group p-1">
+                <label for="organizer">Organizers <sup class="text-danger">*</sup></label>
+                <input type="text" class="form-control" id="organizer" name="organizer" placeholder="organizer" required>
             </div>
-            <div class="form-group">
-                <label for="tags">Tags</label>
+            <div class="form-group p-1">
+                <label for="tags">Tags<sup class="text-danger">*</sup></label>
                 <input type="text" class="form-control" id="tags" name="tags" placeholder="Enter tags">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary m-1 p-1" type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+
+    </div>
+
+    </div>
+
+    <!-- adding trending posts vartically scrolling-->
+    
+   
+  <div class="sidebar sidebar-main col-sm-3 sidebar-right">
+    <div class="inner-content widgets-container">
+    <div id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://www.youthop.com/browse">
+    <div class="input-group">
+    <input name="s" id="s" autocomplete="off" type="text" class="ajax_s form-control input-sm" value="">
+    <span class="input-group-btn">
+    <input type="submit" value="Search" id="searchsubmit" class="button">
+    </span>
+    </div>
+    </form></div><div id="custom_html-3" class="widget_text widget widget_custom_html"><h4 class="widget-title">YO Hits!</h4><div class="textwidget custom-html-widget"><p>Watch to Learn about week's most popular opportunities!</p>
+ 
+    <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 163px; height: 48px;" id="___ytsubscribe_0"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 163px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1662018100293" name="I0_1662018100293" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCeV06upb_vRYFvLuwItpXkQ&amp;layout=full&amp;count=hidden&amp;origin=https%3A%2F%2Fwww.youthop.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.z9QjrzsHcOc.O%2Fd%3D1%2Frs%3DAHpOoo8359JQqZQ0dzCVJ5Ui3CZcERHEWA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1662018100293&amp;_gfid=I0_1662018100293&amp;parent=https%3A%2F%2Fwww.youthop.com&amp;pfname=&amp;rpctoken=54196741" data-gapiattached="true"></iframe></div></div></div>
+    <div id="wpp-2" class="widget popular-posts">
+    <h4 class="widget-title">Trending</h4>
+    
+    <ul class="">
+    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href=""><h3>SDG Innovation Challenge 2022</h3></a></div></li>
+    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Scholarships</a></span><a href=""><h3>Harvard University Free Online Courses</h3></a></div></li>
+    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Awards</a>, <a href="" class="">Grants</a>, <a href="" class="">SDG</a>, <a href="" class="">Workshops</a></span><a href=""><h3>Genius Bee Innovation Programme 2022</h3></a></div></li>
+    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Fellowships</a>, <a href="" class="">Internships</a>, <a href="" class="">Scholarships</a>, <a href="" class="">SDG</a>, <a href="" class="">Undergraduate</a></span><a href=""><h3>Global Youth Climate Fellowship Program 2022</h3></a></div></li>
+    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Exchange Programs</a></span><a href=""><h3>WYA Certified Training Program (CTP) 2022</h3></a></div></li>
+    </ul>
+    </div>
+    <div id="text-3" class="widget widget_text"><h4 class="widget-title">Keep Connected</h4> 
+     </div>
+    </div> 
+  </div>
+    </div>
+    </div>
+
+
+
+   
+
     
 
 

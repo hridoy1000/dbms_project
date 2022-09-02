@@ -6,57 +6,42 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Post Opportunities</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="icons/u.png" type="image/png">
+        <link rel="stylesheet" href="styles1.css">
+        <link rel="shortcut icon" href="icons/opportunity.png" type="image/png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
       </head>
       <body>
 
 <!-- navbar-->
- <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand text-info" href="index.html">Yotunities</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class=" text-light navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link text-info" href="post.html">Post an Opportunity</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-info" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Browse Opportunities
-            </a>
-            <ul class="dropdown-menu bg-dark">
-              <li><a class="dropdown-item text-info" href="#">Near Deadline</a></li>
-              <li><a class="dropdown-item text-info" href="#">Compettions</a></li>
-              <li><a class="dropdown-item text-info" href="#">Scholarships</a></li>
-              <li><a class="dropdown-item text-info" href="#">Fellowships</a></li>
-              <li><a class="dropdown-item text-info" href="#">Internships</a></li>
-              <li><a class="dropdown-item text-info" href="#">Workshops</a></li>
-              <li><a class="dropdown-item text-info" href="#">Jobs</a></li>
-              <li><a class="dropdown-item text-info" href="#">Miscellaneos</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search Opportunities" aria-label="Search">
-          <button class="btn btn-info" type="submit">Search</button>
-        </form>
+<div class="wrapper">
+  <header>
+      <div class="logo">
+          <a href="index.html"><img src="icons/opportunity.png" alt=""></a>
       </div>
-    </div>
-  </nav>
+      <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <!-- search an opportunity -->
+              <li><a href="search.html">Search</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="signup.html">Sign Up</a></li>
+              <li><a href="about.html">About</a></li>
+          </ul>
+      </nav>
+  </header>
+</div>
+
 <!-- main body-->
 
 <!-- post an opportunity title -->
-<div class="post-title title_bg">
-    <h1 class="text-center text-dark t-color">Post an Opportunity</h1>
-</div>
+<div class="container-fluid post-margin">
+  <div class="row">
+    <div class="col-md-12 mt-4 mb-0">
+      <h1 class="text-left t-orange ">Post an Opportunity !</h1>
+    </div>
+  </div>
 
-
-
-<div class="d-inline-flex">
+<div class="d-inline-flex t-white post-margin">
 
 <div class="p-5 w-75">
   <!-- Post Guidline -->
@@ -73,6 +58,7 @@
         </ul>
     </p> 
     </div>
+
 
 
 <!-- middle container -->
@@ -92,7 +78,7 @@
               <textarea class="form-control" id="process" name="process" rows="3" required></textarea>
           </div>
           <div class="form-group p-1">
-            <label for="Eligibilitis">Eligibilitis<sup class="text-danger">*</sup> </label>
+            <label for="Eligibilitis">Eligibilities<sup class="text-danger">*</sup> </label>
             <textarea class="form-control" id="Eligibilitis" name="Eligibilitis" rows="3" required></textarea>
         </div>
             <div class="form-group p-1">
@@ -174,46 +160,87 @@
                 <label for="tags">Tags<sup class="text-danger">*</sup></label>
                 <input type="text" class="form-control" id="tags" name="tags" placeholder="Enter tags">
             </div>
-            <button class="btn btn-primary m-1 p-1" type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn button-color m-1 p-1" type="submit">Submit</button>
         </form>
     </div>
 
     </div>
 
     </div>
+   
 
     <!-- adding trending posts vartically scrolling-->
-    
-   
+
+
   <div class="sidebar sidebar-main col-sm-3 sidebar-right">
     <div class="inner-content widgets-container">
-    <div id="search-2" class="widget widget_search"><form role="search" method="get" id="searchform" action="https://www.youthop.com/browse">
-    <div class="input-group">
-    <input name="s" id="s" autocomplete="off" type="text" class="ajax_s form-control input-sm" value="">
-    <span class="input-group-btn">
-    <input type="submit" value="Search" id="searchsubmit" class="button">
-    </span>
-    </div>
-    </form></div><div id="custom_html-3" class="widget_text widget widget_custom_html"><h4 class="widget-title">YO Hits!</h4><div class="textwidget custom-html-widget"><p>Watch to Learn about week's most popular opportunities!</p>
- 
-    <div style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 163px; height: 48px;" id="___ytsubscribe_0"><iframe ng-non-bindable="" frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 163px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 48px;" tabindex="0" vspace="0" width="100%" id="I0_1662018100293" name="I0_1662018100293" src="https://www.youtube.com/subscribe_embed?usegapi=1&amp;channelid=UCeV06upb_vRYFvLuwItpXkQ&amp;layout=full&amp;count=hidden&amp;origin=https%3A%2F%2Fwww.youthop.com&amp;gsrc=3p&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fabc-static%2F_%2Fjs%2Fk%3Dgapi.lb.en.z9QjrzsHcOc.O%2Fd%3D1%2Frs%3DAHpOoo8359JQqZQ0dzCVJ5Ui3CZcERHEWA%2Fm%3D__features__#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled%2Cdrefresh%2Cerefresh%2Conload&amp;id=I0_1662018100293&amp;_gfid=I0_1662018100293&amp;parent=https%3A%2F%2Fwww.youthop.com&amp;pfname=&amp;rpctoken=54196741" data-gapiattached="true"></iframe></div></div></div>
-    <div id="wpp-2" class="widget popular-posts">
+      
     <h4 class="widget-title">Trending</h4>
-    
-    <ul class="">
-    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href=""><h3>SDG Innovation Challenge 2022</h3></a></div></li>
-    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Scholarships</a></span><a href=""><h3>Harvard University Free Online Courses</h3></a></div></li>
-    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Awards</a>, <a href="" class="">Grants</a>, <a href="" class="">SDG</a>, <a href="" class="">Workshops</a></span><a href=""><h3>Genius Bee Innovation Programme 2022</h3></a></div></li>
-    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Fellowships</a>, <a href="" class="">Internships</a>, <a href="" class="">Scholarships</a>, <a href="" class="">SDG</a>, <a href="" class="">Undergraduate</a></span><a href=""><h3>Global Youth Climate Fellowship Program 2022</h3></a></div></li>
-    <li><img src="" width="50" height="50" alt="" class="" loading="lazy"> <div class="desc"><span class="cat-name"><a href="" class="">Exchange Programs</a></span><a href=""><h3>WYA Certified Training Program (CTP) 2022</h3></a></div></li>
-    </ul>
-    </div>
-    <div id="text-3" class="widget widget_text"><h4 class="widget-title">Keep Connected</h4> 
+    <div class="widget-content">
+      <ul class="trending-posts">
+        <li>
+          <div class="post-thumb">
+            <a href="#"><img src="images/1.jpg" alt=""></a>
+          </div>
+          <div class="post-info">
+            <h5 class="entry-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h5>
+            <div class="post-meta">
+              <span class="date">May 10, 2018</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="post-thumb">
+            <a href="#"><img src="images/2.jpg" alt=""></a>
+          </div>
+          <div class="post-info">
+            <h5 class="entry-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h5>
+            <div class="post-meta">
+              <span class="date">May 10, 2018</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="post-thumb">
+            <a href="#"><img src="images/3.jpg" alt=""></a>
+          </div>
+          <div class="post-info">
+            <h5 class="entry-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h5>
+            <div class="post-meta">
+              <span class="date">May 10, 2018</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="post-thumb">
+            <a href="#"><img src="images/4.jpg" alt=""></a>
+          </div>
+          <div class="post-info">
+            <h5 class="entry-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h5>
+            <div class="post-meta">
+              <span class="date">May 10, 2018</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="post-thumb">
+            <a href="#"><img src="images/5.jpg" alt=""></a>
+          </div>
+          <div class="post-info">
+            <h5 class="entry-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></h5>
+            <div class="post-meta">
+              <span class="date">May 10, 2018</span>
+              </div>
+              </div>
+              </li>
+              </ul>
+              </div>
+              </div>
      </div>
     </div> 
   </div>
     </div>
-    </div>
+  
 
 
 
@@ -229,74 +256,55 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- footer -->
-   <div id="footer">
-    <footer class="bg-black page-footer font-small blue pt-4">
-        <div class="container-fluid text-center text-md-left">
-          <div class="row">
-            <div class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-light text-uppercase">About Us</h5>
-              <h5 class="text-uppercase text-bg-light text-info">Yotunities </h5>
-              <p class="text-white">We are a group of students from the University of the Immaculate Conception and passionate about opportunities and want to help others find them.</p>
-            </div>
-            <hr class="clearfix w-100 d-md-none pb-3">
-            <div class="col-md-3 mb-md-0 mb-3">
-              <h5 class="text-uppercase">Links</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-3 mb-md-0 mb-3">
-              <h5 class="text-uppercase">Contact Us:</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#!">Link 1</a>
-                </li>
-                <li>
-                  <a href="#!">Link 2</a>
-                </li>
-                <li>
-                  <a href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a href="#!">Link 4</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+<!-- footer -->
+<div id="footer">
+  <footer class="bg-black page-footer font-small blue pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="t-orange text-uppercase">About Us</h5>
+          <h5 class="text-uppercase text-bg-light t-color">Yotunities</h5>
+          <p class="text-white">We are a group of students from the University of the Immaculate Conception and passionate about opportunities and want to help others find them.</p>
         </div>
-        <div class="text-white footer-copyright text-center py-3">© 2022 Copyright: All Rights Reserved || Yotunities Team
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase t-orange">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
         </div>
-        </footer>
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase t-orange">Contact Us:</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Link 1</a>
+            </li>
+            <li>
+              <a href="#!">Link 2</a>
+            </li>
+            <li>
+              <a href="#!">Link 3</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </div>
+    <div class="text-white footer-copyright text-center py-3">© 2022 Copyright: All Rights Reserved || Yotunities Team
+    </div>
     </footer>
     </div>
  </body>

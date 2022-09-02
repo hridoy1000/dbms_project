@@ -127,18 +127,6 @@ body{
   padding-bottom: 0px !important;
   border-radius: 5px;
 }
-
-#footer {
-  position: relative;
-  padding: 10px 10px 0px 10px;
-  bottom: 0;
-  width: 100%;
-  margin-bottom: 0px;
-  /* Height of the footer*/
-  height: 250px;
-  background: black;
-}
-
 .form {
   background-color: rgb(238, 238, 238);
   border: none;
@@ -174,6 +162,17 @@ body{
  margin-bottom: 50px;
  margin-left: 10px;
  margin-right: 10px;
+}
+.button-color{
+  background-color: rgb(92, 92, 92);
+  border: none;
+  color: rgba(0, 0, 0, 0.802);
+  padding: 12px;
+  display: flex;
+  position: center;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 

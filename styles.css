@@ -285,3 +285,40 @@ ul ul li a:hover{
 .t-white{
     color: #ffffff!important;
 }
+
+.search{
+    width: 20px;
+    height: 20px;
+    color: #f09053;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 0 auto;
+}
+
+.btn-style{
+    border-style: none;
+    background-color: #0f102d;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.search-style
+{
+    border-style: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+

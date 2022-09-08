@@ -15,7 +15,7 @@ body{
     overflow: hidden;
 }
 header{
-    padding: 8px 100px;
+    padding: 8px 20px 8px 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -25,19 +25,19 @@ header{
     right: 0;
     z-index:100;
     background-color: #0f102d!important;
+    margin-right: 0 important;
  
 }
 header ul li{
     list-style: none;
     display: inline-block;
-    margin: 0px 15px;
-   
+    margin: 0px 15px 0px 0px;
 }
 header ul li a{
     color: #aba9b4;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     transition: all ease 0.5s;
 }
 header ul li a:hover{
@@ -47,16 +47,16 @@ header ul li a:hover{
 }
 header ul li a.btn{
     display: inline-block;
-    width: 180px;
-    height: 60px;
-    line-height: 50px;
+    width: 120px;
+    height: 50px;
+    line-height: 40px;
     background-color: #f09053;
-    color: #fff;
+    color: rgba(80, 78, 78, 0.817);
     text-align: center;
     font-size: 18px;
     border-radius: 50px;
     transition: all ease 0.5s;
-
+    margin-top: 2px;
 }
 header ul li a.btn:hover{
     background-color: #615c59;
@@ -242,13 +242,15 @@ ul ul li a:hover{
 .logo{
     width: 75px;
     height: auto;
+    margin-left: 0px !important;
+    margin-right: 10px !important;
     }
-    .logo img{
+.logo img{
         width: 100%;
         height: auto;
     }
 
-    .margin-slider{
+.margin-slider{
         margin-top: 50px;
         margin-bottom: 50px;
         margin-left: 8px;
@@ -300,7 +302,7 @@ ul ul li a:hover{
 .container{
     width: 100%;
     height: 100%;
-    margin: 0 auto 0 auto;
+    margin-left: 0px !important;
 }
 
 .btn-style{
@@ -321,4 +323,8 @@ ul ul li a:hover{
     margin-bottom: 5px;
     
 }
+.nav-margin{
+    margin-top: 12px;
+}
+
 

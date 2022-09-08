@@ -91,11 +91,13 @@ header ul li a.btn:hover{
         color: #f09053!important;
     }
 
+    .t-blue{
+        color: #0f102d!important;
+    }
+
     .post-margin{
         margin-top: 80px!important;
         margin-bottom: 0!important;
-
-    
     }
 
     .button-color{
@@ -107,4 +109,7 @@ header ul li a.btn:hover{
         color: #ffffff!important;
         border-style: none!important;
     }
-    
+
+    .bg-header{
+        background-color: #d97924e9!important;
+    }
